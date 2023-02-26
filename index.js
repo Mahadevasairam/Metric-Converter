@@ -1,17 +1,18 @@
 const convertBtn = document.getElementById("convert-btn")
 let inputEl = document.getElementById("input-el")
-let alertMessage = document.getElementById("alert")
+let alertMessage = document.getElementById("alert-message")
 let lengthConverted = document.getElementById("length-converted")
 let volumeConverted = document.getElementById("volume-converted")
 let massConverted = document.getElementById("mass-converted")
 
 convertBtn.addEventListener("click", function () {
     let a = Number(inputEl.value)
+
     inputEl.value = ""
-    alertMessage = ""
+    alertMessage.textContent = ""
     if (a > 0) {
         render(a)
-    } else if (a < 0 || a === 0) {
+    } else {
         alertMessage.textContent = "Enter a number greater than zero"
     }
 })
