@@ -17,7 +17,10 @@ convertBtn.addEventListener("click", function () {
     }
 })
 function render(a) {
-    lengthConverted.textContent = `${a} metres = ${(a * 3.281).toFixed(3)} feet | ${a} feet = ${(a / 3.281).toFixed(3)} metres`
-    volumeConverted.textContent = `${a} litres = ${(a * 0.264).toFixed(3)} gallons | ${a} gallons = ${(a / 0.264).toFixed(3)} litres`
-    massConverted.textContent = `${a} kilos = ${(a * 2.204).toFixed(3)} pounds | ${a} pounds = ${(a / 2.204).toFixed(3)} kilos`
+    lengthConverted.textContent = `${a} metres = ${(a * 3.281).toFixed(3)} feet 
+    ${a} feet = ${(a / 3.281).toFixed(3)} metres`
+    volumeConverted.textContent = `${a} litres = ${(a * 0.264).toFixed(3)} gallons 
+    ${a} gallons = ${(a / 0.264).toFixed(3)} litres`
+    massConverted.textContent = `${a} kilos = ${(a * 2.204).toFixed(3)} pounds 
+    ${a} pounds = ${(a / 2.204).toFixed(3)} kilos`
 }
